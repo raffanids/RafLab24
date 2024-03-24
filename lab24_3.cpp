@@ -1,14 +1,14 @@
 #include<iostream>
 #include<set>
-
 using namespace std;
 
-int count(int arr[], int size){
-    set<int> uniqueNumbers;
-    for (int i = 0; i < size; i++){
-        uniqueNumbers.insert(arr[i]);
-    }
-    return uniqueNumbers.size();
+int count(int data[], int N){
+	set<int> set;
+	for(int i = 0; i < N; i++){
+		set.insert(data[i]);
+	}
+	return set.size();
+
 }
 
 int main(){	
